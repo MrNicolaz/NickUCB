@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>Listas, Formulários e Introdução</title>
+</head>
+
+<body>
+
+    <header></header>
+
+    <main>
+
+        <section>
+
+            <h1 class="titulo">Lista Não Ordenada</H1>
+
+            <ul>
+                <li>Café</li>
+                <li>Cereal</li>
+                <li>Leite</li>
+            </ul>
+
+            <h1 class="titulo2">Lista Ordenada</H1>
+
+            <ol>
+                <li>Café</li>
+                <li>Cereal</li>
+                <li>Leite</li>
+            </ol>
+
+        </section>
+
+        <section>
+
+            <h1 class="titulo3">Formulário</h1>
+
+            <fieldset>
+                <legend>Formulário de Contato</legend>
+                <form action="processa.php" method="get">
+                    <label for="txtnome">Nome:<input type="text" id="txtnome" name="txtnome"></label><br>
+                    <label for="email">Email:<input type="email" id="txtemail" name="txtemail"
+                            placeholder="email@email.com"></label><br>
+                    <label for="txttelefone">Telefone:<input type="tel" id="txttelefone" name="txttelefone"
+                            placeholder="(00) 00000-0000"></label><br>
+
+                    <label for="txtLista"> Motivo do Contao: </label>
+                    <input list="txtLista">
+                    <datalist id="txtLista">
+                        <option value="">
+                        <option value="Elogio">
+                        <option value="Reclamação">
+                        <option value="Duvidas">
+                        <option value="Outro">
+                    </datalist><br>
+
+                    <label for="txtDemanda">Motivo do Abertura:</label>
+                    <select name="txtDemanda" id="txtDemanda" size="1">
+                        <option value="">Selecione uma opção</option>
+                        <option value="Elogio">Elogio</option>
+                        <option value="Reclamação">Reclamação</option>
+                        <option value="Duvidas">Dúvidas</option>
+                        <option value="Outro" selected>Outro assunto</option>
+                    </select><br>
+
+                    <label for="txtMensagem">Mensagem:</label>
+                    <textarea name="txtMensagem" id="txtMensagem" cols="170" rows="5"
+                        placeholder="Digite sua mensagem..."></textarea><br>
+                    <input type="Reset" value="Limpar">
+                    <input type="submit" value="Enviar Mensagem">
+                </form>
+            </fieldset>
+
+            <section>
+
+                <h1>Tipos de Input</h1>
+
+                <input type="checkbox">Internet <br>
+                <input type="radio">Sim <br>
+                <input type="radio">Não <br>
+                <input type="date"> <br>
+                <input type="datetime-local"> <br>
+                <input type="color"> <br>
+                <input type="number"> <br>
+                <input type="password"> <br>
+                <input type="file"> <br>
+                <input type="range"> <br>
+                <input type="week">
+
+            </section>
+
+            <section>
+
+                <h1>Exemplo de cores CSS</h1>
+
+                <h1 style="background-color:DodgerBlue;">Cor de Fundo</h1>
+
+                Cor do Texto
+                <h1 style="color:Tomato;">Cor do texto</h1>
+
+                Cor da Borda
+                <h1 style="border:2px solid Tomato;">Cor da Borda</h1>
+
+            </section>
+
+
+    </main>
+
+    <footer></footer>
+
+</body>
+
+</html>
