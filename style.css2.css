@@ -1,0 +1,42 @@
+a:link {
+    color: rgb(255, 20, 20);
+    background-color: rgb(251, 255, 0);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(9, 255, 0);
+    background-color: rgb(255, 0, 0);
+}
+
+a:visited {
+    background-color: aqua;
+}
+
+a:active {
+    background-color: darkmagenta;
+}
+
+.container{
+font-size: 25px;
+}
+
+.box p{
+    color:brown;
+    font-family: monospace;
+    font-size: 25px;
+    font-weight: 700px;
+    font-style: italic;
+    text-align: justify;
+    letter-spacing: 5px;
+    word-spacing: 20px;
+    line-height: 20px;
+    text-indent: 100px; 
+}
+
+div{
+    width: 320px;
+    padding: 10px;
+    border: 5px solid gray;
+    margin: 0;
+}
