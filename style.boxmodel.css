@@ -1,0 +1,21 @@
+div {
+    /*width:largura & height:altura*/
+    width: 500px;
+    height: 100px;
+
+    /*Manter o tamanho da caixa*/
+    box-sizing: border-box; 
+    
+}
+
+.conteudo{
+    background-color: red;
+    font-size: 28px;
+    color: azure;
+    text-align: center;
+
+    /*padding:preechimento*/
+    padding-top: 100px;
+    padding-bottom: 700px;
+
+}
