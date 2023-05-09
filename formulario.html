@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="formulario.css">
+</head>
+<header class="header">
+    <a href="https://ucb.catolica.edu.br/portal/"><img class="logo"
+            src="https://ucb.catolica.edu.br/portal/wp-content/uploads/2021/06/catolica-de-brasilia.svg"
+            alt="catolica"></a>
+    <nav class="menu">
+        <ul>
+            <a href="Projeto.html">
+                <li>Home</li>
+            </a>
+            <a href="https://ucb.catolica.edu.br/portal/conheca/institucional/catolica-de-brasilia/">
+                <li>Sobre</li>
+            </a>
+            <a href="https://ucb.catolica.edu.br/portal/cursos/graduacao/nossos-cursos/">
+                <li>Preços</li>
+            </a>
+            <a href="https://ucb.catolica.edu.br/portal/conheca/biblioteca/servicos/">
+                <li>Serviços</li>
+            </a>
+            <a href="formulario.html">
+                <li>Contato</li>
+            </a>
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <section>
+        <h2>Contato</h2>
+        <form action="processa.php" method="get">
+            <label>Nome</label>
+            <input type="text" name="name" placeholder="Seu nome" autocomplete="off"></imput>
+            <label>Fone</label>
+            <input type="tel" name="tel" placeholder="(xx) xxxxx-xxxx" autocomplete="off"></imput>
+            <label>Email</label>
+            <input type="email" name="email" placeholder="e-mail@email.com" autocomplete="off"></imput>
+            <label>Mensagem</label>
+            <textarea name="message" cols="20" rows="3" placeholder="Mensagem..."></textarea>
+            <button type="reset">
+                <h3>Limpar</h3>
+            </button>
+            <button type="submit">
+                <h3>Enviar</h3>
+            </button>
+        </form>
+    </section>
+</body>
+
+</html>
