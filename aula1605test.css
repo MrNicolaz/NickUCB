@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.boxheader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    border: 3px solid #333;
+    background-color: #333;
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 20px;
+    padding: 0;
+    
+}
+
+.sub__box {
+    display: flex;
+    justify-content: flex-start;
+    gap: 50px;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    height: 5px;
+    border-bottom: 3px inset none;
+    background-color: white;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+nav a {
+    text-decoration:none;
+    color: black;
+}
+
+nav a:hover {
+    color: #110a0c;
+}
+
+.caixa {
+    display: flex;
+    position: sticky;
+    width: 100%;
+    height: 570px;
+    border: 3px solid none;
+    background-color: #c05724;
+}
+
+.box1,
+.box2,
+.box3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5%;
+    margin-left: 3%;
+    width: 300px;
+    height: 80px;
+    border: 3px solid none;
+    background-color: black;
+    border-radius: 10px;
+    align-items: center;
+    color: #FFF;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+}
+
+.box1:hover,
+.box2:hover,
+.box3:hover {
+    background-color: #110a0c;
+    cursor: pointer;
+}
+
+.caixa2 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    gap: 10px;
+    width: 100%;
+    height: 100%;
+    border: 2px solid none;
+    
+}
+
+.box5,
+.box6,
+.box7,
+.box8,
+.box9,
+.box10 {
+    width: 28%;
+    height: 28%;
+    margin-top: 4%;
+    border: 2px solid none;
+    border-radius: 10px;
+    align-items: center;
+    color: #FFF;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+
+.box5:hover,
+.box6:hover,
+.box7:hover,
+.box8:hover,
+.box9:hover,
+.box10:hover {
+    cursor: pointer;
+    box-shadow: 6px -4px #333;
+}
+
+
+
+.box5 {
+    background-image: url(https://www.servnet.mx/hubfs/imagenes%20art%20sept/00%20Código%20html_%20qué%20es%20y%20todo%20lo%20que%20debes%20saber.png);
+    background-repeat: no-repeat;
+    background-size: 110%;
+}
+
+.box6 {
+    background-image: url(https://i.ytimg.com/vi/T_DIpApkjwM/maxresdefault.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: center;
+    background-position-x: center;
+}
+
+.box7 {
+    background-image: url(https://w7.pngwing.com/pngs/125/326/png-transparent-css-grid-layout-page-layout-cascading-style-sheets-css-flex-box-layout-layout-design-miscellaneous-angle-text.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+.box8 {
+    background-image: url(https://ayltoninacio.com.br/img/p/32w1500.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+.box9 {
+    background-image: url(https://meusetup.com/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcFVGIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--01db650cb7891ba05a50f9c765a633f06f54deba/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9MWm05eWJXRjBTU0lJU2xCSEJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFLRUEya0NoQU02REdkeVlYWnBkSGxKSWc1VGIzVjBhRVZoYzNRR093WlVPZ2xrY21GM1NTSkRhVzFoWjJVZ1QzWmxjaUF3TERBZ01Dd3dJQ0l2WVhCd0wyeHBZaTloYzNObGRITXZhVzFoWjJWekwzQmhhV1F0ZDJGMFpYSnRZWEpyTG5CdVp5SUdPd1pVIiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--e091ca0bf5755ef67ecae332cc4dab4bfad70175/DSC01419.JPG);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.box10 {
+    background-image: url(https://images6.alphacoders.com/728/728101.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-x: center;
+}
+
+.boxfooter {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+  }
+  
+  .footer-content {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .footer-content h3 {
+    margin-bottom: 10px;
+  }
+  
+  .footer-content p {
+    margin-bottom: 20px;
+  }
+  
+  .footer-content ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-content ul li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .footer-content ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer-content ul li a:hover {
+    text-decoration: underline;
+  }
