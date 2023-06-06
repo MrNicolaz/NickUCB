@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --texto-navegacao: #b4b4b4;
+    --container-principal: #1C1C1C;
+    --container-secundario: #C0C0C0;
+    --container-texto: #FFFFFF;
+    --botao-vermelho: #961717;
+    --card-login: #680909;
+    --botao-efeito: #a53535;
+    --cor-de-fundo: #000000;
+    --font-principal: 'Inter', sans-serif;
+}
+
+.container {
+    display: flex;
+}
+
+.principal {
+    background-color: var(--container-principal);
+}
+
+.container__caixa {
+    display: flex;
+    gap: 30%;
+    align-items: center;
+    margin-left: 45vw;
+}
+
+.container__botao1,
+.container__botao2 {
+    color: var(--texto-navegacao);
+    font-weight: 500;
+
+}
+
+.container__botao2 {
+    border: 2px solid var(--texto-navegacao);
+    padding: 9px 15px;
+}
+
+.container__botao1:hover {
+    color: var(--container-texto);
+    transition: .6s;
+}
+
+.container__botao2:hover {
+    color: var(--container-texto);
+    border: 2px solid var(--container-texto);
+    transition: .6s;
+}
+
+.container__logo {
+    padding: 0.1em;
+    margin-left: 20%;
+    width: 55px;
+    height: 50px;
+}
+
+.container__logo1 {
+    padding: 0.1em;
+    margin-left: 24vw;
+    width: 55px;
+    height: 50px;
+}
+
+div a {
+    font-family: var(--font-principal);
+    color: var(--container-texto);
+    text-decoration: none;
+}
+
+.secundario {
+    background-image: url(assets/bacground.png);
+    background-repeat: no-repeat;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.container__texto {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: var(--font-principal);
+    text-align: center;
+    color: var(--container-texto);
+}
+
+.container__titulo {
+    font-size: 38px;
+}
+
+.container__subtitulo {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.container__aviso {
+    color: var(--container-secundario);
+}
+
+.container__botao {
+    display: block;
+    background-color: var(--botao-vermelho);
+    border-radius: 4px;
+    padding: 1em;
+    color: var(--container-texto);
+    text-decoration: none;
+}
+
+.container__botao:hover {
+    background-color: var(--botao-efeito);
+    transition: .6s;
+}
+
+.terciario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--cor-de-fundo);
+    color: var(--container-texto);
+}
+
+.container__dispositivos {
+    font-family: var(--font-principal);
+    text-align: center;
+}
+
+.descricao__titulo {
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--container-texto);
+    margin-bottom: 0.1em;
+}
+
+.descricao__texto {
+    color: var(--container-texto);
+}
+
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 5em 0;
+}
+
+.lista_item {
+    font-size: 32px;
+    color: var(--container-texto);
+}
+
+.rodape__logo {
+    width: 100px;
+    height: 80px;
+}
+
+.rodape__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 1em;
+}
+
+.lista__link a {
+    text-align: center;
+    text-decoration: none;
+    color: var(--container-texto);
+    margin: 1em;
+}
+
+.rodape__texto {
+    text-align: center;
+    font-size: 14px;
+    color: var(--texto-navegacao);
+    margin: 1em 0;
+}
+
+.lista__link a:hover {
+    text-decoration: underline;
+}
+
+.quartenario {
+    background-color: var(--cor-de-fundo);
+    height: 100vh;
+    color: var(--container-texto);
+    font-family: var(--font-principal);
+    justify-content: center;
+    align-items: center;
+}
+
+.main__login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.left__image {
+    width: 40vw;
+}
+
+.right__login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__login {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: var(--card-login);
+    border-radius: 20px;
+}
+
+.card__login h1 {
+    color: var(--container-texto);
+    font-weight: 800;
+    margin: 0;
+}
+
+.textfield {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+    width: 100%;
+}
+
+.textfield input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: var(--container-texto);
+    color: var(--container-principal);
+    font-size: 12pt;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.textfield label {
+    color: var(--container-texto);
+}
+
+.botao {
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: var(--container-texto);
+    background: var(--container-principal);
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px var(--cor-de-fundo);
+}
+
+@media screen and (max-width: 768px) {
+    .container__caixa {
+        margin-left: 20px;
+    }
+
+    .container__logo {
+        margin-left: 10px;
+    }
+
+    .descricao__titulo {
+        font-size: 32px;
+    }
+
+    .container__texto {
+        padding: 0 20px;
+    }
+
+    .dispositivos__lista {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .rodape__logo {
+        width: 80px;
+        height: 60px;
+    }
+
+    .rodape__lista {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .lista__link a {
+        margin: 0.5em 0;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .main__login {
+        flex-direction: column;
+    }
+
+    .left__login h1 {
+        display: none;
+    }
+
+    .lef__login {
+        width: 100%;
+        height: auto;
+    }
+
+    .right__login {
+        width: 100%;
+        height: auto;
+    }
+
+    .left__imagem {
+        width: 50vw;
+    }
+
+    .card__login {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 599px) {
+    .container__logo1 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .container__logo1 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .main__login {
+        flex-direction: column;
+    }
+
+    .left__image {
+        width: 100%;
+        margin-top: 10%;
+    }
+
+    .right__login {
+        width: 100%;
+        height: auto;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    .card__login {
+        width: 100%;
+    }
+
+}
