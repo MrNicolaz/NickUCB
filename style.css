@@ -1,13 +1,631 @@
-.titulo {
-color:blue;
+* {
+    padding: 0;
+    margin: 0;
 }
 
-.titulo2 {
-    color:darkred;
+:root {
+    --cor-de-fundo: #EBECEE;
+    --branco: #FFF;
+    --fonte-principal: "Poppins";
+    --sombra: #6e6e6e38;
+    --vermelho: #e71b00;
+    --cinza: #69666d;
+    --preto: #000;
+    --laranja: #FF8C00;
+    --vermelho-cabecalho: #ebebeb;
 }
 
-.titulo3 {
-    color:blueviolet;
+body {
+    background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+    height: 100%;
+    overflow-x: hidden;
 }
 
-/* Isso funciona do mesmo jeito do <!--HTML-->*/
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecalho__menu-hamburguer {
+    margin-top: 3em;
+    width: 30px;
+    height: 30px;
+    background-image: url(image/menu-hamburguer.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+
+.lista-menu {
+    display: flex;
+}
+
+.lista-menu__link:hover {
+    color: var(--vermelho);
+}
+
+.container-logo1 {
+    width: 40px;
+    height: 40px;
+}
+
+.container-logo {
+    width: 40px;
+    height: 40px;
+}
+
+.container-imagem-perfil {
+    width: 25px;
+    height: 25px;
+}
+
+.container__botao:checked~.lista-menu {
+    display: block;
+}
+
+.lista-menu-titulo {
+    color: var(--vermelho);
+    font-weight: 700;
+}
+
+.lista-menu-item a {
+    color: var(--laranja);
+}
+
+.container__botao {
+    display: none;
+}
+
+.lista-menu-titulo,
+.lista-menu-item {
+    display: flex;
+    padding: 1em;
+}
+
+.lista-menu__link {
+    text-decoration: none;
+}
+
+.container__imagem {
+    margin: 1em;
+}
+
+.banner {
+    background: var(--branco);
+    color: var(--preto);
+    text-align: center;
+    padding: 2.5em 2em;
+}
+
+.banner__titulo {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.banner__texto {
+    font-weight: 500;
+    margin: 1em 0;
+}
+
+.banner__pesquisa {
+    background-color: var(--vermelho);
+    border: 1px solid var(--vermelho);
+    color: var(--branco);
+    border-radius: 24px;
+    padding: 1em;
+    width: 100%;
+}
+
+.banner__pesquisa::placeholder {
+    font-family: var(--branco);
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    color: var(--branco);
+    background: url(image/Pesquisa.png) no-repeat;
+    background-size: 45px;
+    background-position: 1em;
+    padding-left: 3em;
+}
+
+.container-titulo {
+    color: var(--preto);
+}
+
+.container-texto {
+    color: var(--cinza);
+}
+
+.container-conteudo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 4em;
+}
+
+.descricao__texto {
+    color: var(--cinza);
+}
+
+.card {
+    background: var(--branco);
+    box-shadow: 0px 4px 4px var(--shadow);
+    border-radius: 10px;
+    margin: 1em;
+    padding: 1em;
+}
+
+.card__descricao {
+    display: flex;
+}
+
+.botoes {
+    display: flex;
+    gap: .2em;
+    list-style: none;
+    justify-content: end;
+    margin-right: 1.2em;
+}
+
+.descricao-python {
+    width: 100px;
+    height: 100px;
+    padding: 1em;
+}
+
+.descricao-react {
+    width: 150px;
+    height: 90px;
+    padding: .9em;
+}
+
+.descricao-sql {
+    width: 150px;
+    height: 90px;
+    padding: 1em;
+}
+
+.container-quintenario {
+    display: flex;
+    justify-content: center;
+}
+
+.saiba-mais {
+    margin: 1em 0;
+    border: 1px solid var(--vermelho);
+    border-radius: 4px;
+    background-color: var(--vermelho);
+    padding: .8em;
+    text-decoration: none;
+    color: var(--branco);
+    font-weight: 550;
+}
+
+.rodape {
+    background-color: var(--vermelho);
+    border-top: 1px solid var(--vermelho);
+}
+
+.rodape-titulo {
+    font-size: 16px;
+    text-align: center;
+    font-weight: 300;
+    color: var(--branco);
+}
+
+.rodape-ucb-titulo {
+    display: none;
+}
+
+.lista {
+    display: none;
+}
+
+@media ((min-width: 50px) and (max-width: 480px)) {
+    header {
+        padding-top: 10px;
+        background-color: var(--branco);
+        margin-bottom: 3em;
+    }
+
+    .container-logo1 {
+        display: none;
+    }
+
+    .cabecalho {
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+        background-color: var(--branco);
+        border: 2px solid var(--branco);
+        box-shadow: 0px 5px var(--sombra);
+        border-radius: 60px;
+        margin: 1em;
+    }
+
+    .card__descricao {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .descricao-react {
+        width: 110px;
+    }
+
+    .descricao-sql {
+        width: 110px;
+    }
+
+    .lista-menu {
+        display: none;
+        position: absolute;
+        z-index: 2;
+        top: 10%;
+        left: 5%;
+        width: 70vw;
+        list-style: none;
+    }
+
+    .lista-menu-titulo,
+    .lista-menu-item {
+        padding: 1em;
+        background-color: var(--branco);
+    }
+
+    .banner__titulo {
+        font-size: 26px;
+    }
+
+    .banner__pesquisa {
+        background-color: var(--vermelho);
+        border: 1px solid var(--vermelho);
+        color: var(--branco);
+        border-radius: 24px;
+        padding: 1em;
+        width: 80%;
+    }
+
+    .rodape-titulo {
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .rodape-ucb-titulo {
+        display: none;
+        justify-content: center;
+        font-size: 16px;
+        text-align: left;
+        font-weight: 300;
+        color: var(--branco);
+        font-weight: 700;
+    }
+
+    .lista {
+        display: none;
+        justify-content: center;
+        text-align: center;
+    }
+
+    ul,
+    li a {
+        list-style: none;
+        text-decoration: none;
+        color: var(--branco);
+    }
+}
+
+@media ((min-width: 481px) and (max-width: 1180px)) {
+    header {
+        padding-top: 10px;
+        background-color: var(--branco);
+        margin-bottom: 3em;
+    }
+
+    .container-logo1 {
+        display: none;
+    }
+
+    .cabecalho {
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+        background-color: var(--branco);
+        border: 2px solid var(--branco);
+        box-shadow: 0px 5px var(--sombra);
+        border-radius: 60px;
+        margin: 1em;
+    }
+
+    .card__descricao {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .descricao-react {
+        width: 110px;
+    }
+
+    .descricao-sql {
+        width: 110px;
+    }
+
+    .lista-menu {
+        display: none;
+        position: absolute;
+        z-index: 2;
+        top: 10%;
+        left: 5%;
+        width: 70vw;
+        list-style: none;
+    }
+
+    .lista-menu-titulo,
+    .lista-menu-item {
+        padding: 1em;
+        background-color: var(--branco);
+    }
+
+    .banner__titulo {
+        font-size: 26px;
+    }
+
+    .banner__pesquisa {
+        background-color: var(--vermelho);
+        border: 1px solid var(--vermelho);
+        color: var(--branco);
+        border-radius: 24px;
+        padding: 1em;
+        width: 80%;
+    }
+
+    .rodape-titulo {
+        display: none;
+    }
+
+    .rodape-ucb {
+        border-bottom: 1px solid var(--branco);
+        margin: .5em 9em;
+    }
+
+    .rodape-ucb-titulo {
+        display: flex;
+        justify-content: center;
+        font-size: 16px;
+        text-align: left;
+        font-weight: 300;
+        color: var(--branco);
+        font-weight: 700;
+    }
+
+    .lista {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    ul,
+    li a {
+        list-style: none;
+        text-decoration: none;
+        color: var(--branco);
+    }
+}
+
+@media screen and (min-width: 1181px) {
+    .cabecalho__menu-hamburguer {
+        display: none;
+    }
+
+    .lista-menu-titulo {
+        display: none;
+    }
+
+    .container-logo {
+        display: none;
+    }
+
+    .lista-menu {
+        font-weight: 600;
+    }
+
+    .banner__titulo {
+        font-size: 32px;
+    }
+
+    .imagem-de-fundo {
+        width: 25%;
+    }
+
+    .container-conteudo {
+        font-size: 18px;
+    }
+
+    .banner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .banner__pesquisa {
+        width: 30%;
+        height: 10%;
+    }
+
+    header {
+        margin-bottom: 3em;
+    }
+
+    .card__descricao {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .descricao-react {
+        width: 110px;
+    }
+
+    .descricao-sql {
+        width: 110px;
+    }   
+
+    .rodape-titulo {
+        display: none;
+    }
+
+    .rodape-ucb {
+        border-bottom: 1px solid var(--branco);
+        margin: .5em 9em;
+    }
+
+    .rodape-ucb-titulo {
+        display: flex;
+        justify-content: center;
+        font-size: 16px;
+        text-align: left;
+        font-weight: 300;
+        color: var(--branco);
+        font-weight: 700;
+    }
+
+    .lista {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    ul,
+    li a {
+        list-style: none;
+        text-decoration: none;
+        color: var(--branco);
+    }
+}
+
+/*Login*/
+
+.main-login {
+    width: 100vw;
+    height: 100vh;
+    background: var(--cor-de-fundo);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text-login h1 {
+    font-size: 32px;
+    color: var(--preto);
+}
+
+h4 {
+    color: var(--cinza);
+}
+
+.login-image {
+    width: 35vw;
+}
+
+.area-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 100px;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--sombra);
+    border-radius: 10px;
+    width: 355px;
+    height: 320px;
+    padding: 35px;
+}
+
+.login form {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.login input {
+    margin-top: 10px;
+    background-color: var(--branco);
+    padding-left: 10px;
+    color: var(--cinza);
+    border: none;
+    height: 45px;
+    border-radius: 8px;
+}
+
+.login img {
+    width: 65px;
+    height: auto;
+}
+
+form [type="submit"]{
+    display: block;
+    background-color: #e71b00;
+    color: var(--branco);
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+p{
+    color: var(--branco);
+    margin-top: 10px;
+    
+}
+
+a{
+    color: var(--vermelho);
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .main-login {
+        flex-direction: column;
+    }
+
+    .text-login {
+        width: auto;
+        height: auto;
+        padding: 20px;
+    }
+
+    .login-image {
+        width: 80%;
+    }
+
+    .area-login {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+        margin-top: 20px;
+    }
+
+    .login {
+        width: 80%;
+        height: auto;
+    }
+}
